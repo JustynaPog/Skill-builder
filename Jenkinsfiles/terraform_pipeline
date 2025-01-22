@@ -1,0 +1,42 @@
+pipeline {
+    agent any
+    environment {
+        GIT_REPO = 'https://gitlab.net/gitlab-instance-3471579a/terraform_infrastructure.git'
+        GIT_CREDENTIALS_ID = '##########'
+		AWS_CREDENTIALS_ID = 'jenkins-gitlab-packer-ansible-ami'
+		
+    }
+    stages {
+		stage('Checkout') {
+            steps {
+                checkout([$class: 'GitSCM',
+                          branches: [[name: '*/main']],
+                          userRemoteConfigs: [[url: env.GIT_REPO, credentialsId: env.GIT_CREDENTIALS_ID]]])
+            }
+        }
+        
+        stage('Terraform') {
+            steps {
+                script {
+                    withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: env.AWS_CREDENTIALS_ID]]) {
+                        sh '''
+                        AMI_ID="$(aws ec2 describe-images --owners self --filters "Name=name,Values=ubuntu-*" --query 'Images[*].[ImageId,Name]'| jq -r '. | sort_by(.[1]) | last | .[0]')"
+
+                        echo "AMI ID: ${AMI_ID}"
+                        cd ${WORKSPACE}
+                        terraform init
+                        terraform ${action} -var "ami_id=${AMI_ID}" -auto-approve
+                        '''
+                    }
+                }
+            }
+        }
+
+    }
+
+    post {
+        always {
+            cleanWs()
+        }
+    }
+}
