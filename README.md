@@ -9,7 +9,7 @@ As part of my development journey, I worked on:
 ✅ Deployment patterns with AMI/ASG  
 
 
-## 📩 Contact  
+## 📩 Contact me
 If you’d like to connect, feel free to reach out on:  
 📧 Email: [pogorzelskahinc@gmail.com](mailto:pogorzelskahinc@gmail.com)   
 💼 LinkedIn: [linkedin.com/in/justyna-pogorzelska-hinc](https://www.linkedin.com/in/justyna-pogorzelska-hinc/)    
