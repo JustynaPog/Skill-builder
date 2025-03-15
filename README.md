@@ -1,5 +1,5 @@
 # 👋 About Me  
-Hi! I'm Justyna Pogorzelska Hinc, a passionate cloud and DevOps enthusiast. This portfolio showcases my projects and experience gained through real-world scenarios while participating in a mentorship program and self-learning with modern cloud technologies.
+Hi! I'm Justyna Pogorzelska Hinc, a passionate cloud and DevOps enthusiast. This portfolio showcases my projects and experience gained during the mentoring program and self-learning, focusing on DevOps practices and technologies
 
 ## 🔥 What I Learned  
 As part of my development journey, I worked on:  
