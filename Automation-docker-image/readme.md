@@ -16,7 +16,7 @@ Make sure you have **Docker installed** on your system:
 ## 🏗 Building the Docker Image
 To build the Docker image locally, follow these steps:  
 
-1️⃣ **Clone this repositor**:  
+1️⃣ **Clone this repository**:  
 ```sh
 git clone <repository-url>
 cd <repository-directory>
