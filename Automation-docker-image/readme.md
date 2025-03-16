@@ -6,8 +6,7 @@ Perfect for DevOps tasks, infrastructure automation, and CI/CD environments.
 ## 🚀 Features  
 ✔ Based on the latest Ubuntu 24.04  
 ✔ Pre-installed **Ansible** for configuration management  
-✔ Includes **Packer** for automated machine image creation  
-✔ **Non-root user (`packer`)** with sudo access  
+✔ Includes **Packer** for automated machine image creation   
 
 ## 🛠 Prerequisites  
 Make sure you have **Docker installed** on your system:  
