@@ -1,4 +1,4 @@
-# 🚀 AWS EC2 Security Group Monitor  
+# 🚀 AWS EC2 Open Ports Alert  
 
 This repository contains an AWS Lambda function that monitors open ports in EC2 Security Groups and sends email notifications if any instances have publicly accessible ports.  
 
