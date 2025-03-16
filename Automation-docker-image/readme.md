@@ -52,7 +52,7 @@ docker stop ansible-packer-container
 docker rm ansible-packer-container
 ```
 ## 🔥 Use Cases
-This container is useful for:
+This container is useful for:  
 ✔ Testing and developing Ansible playbooks 📝  
 ✔ Automating image creation workflows with Packer 📦  
 ✔ Creating a portable DevOps/CI/CD environment 🚀
