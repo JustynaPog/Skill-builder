@@ -11,11 +11,11 @@ This repository contains an AWS Lambda function that monitors open ports in EC2 
 
 ## 🛠 How It Works  
 
-1️⃣ **Retrieves all running EC2 instances** and their associated Security Groups  
-2️⃣ **Extracts open ports** from instance tags or uses default ports (`22`, `80`)  
-3️⃣ **Scans Security Groups** for rules that expose ports to the public (`0.0.0.0/0`)  
-4️⃣ **Matches instances with open ports** and gathers notification email addresses  
-5️⃣ **Sends a consolidated alert email** to all listed recipients via AWS SES  
+1. **Retrieves all running EC2 instances** and their associated Security Groups  
+2. **Extracts open ports** from instance tags or uses default ports (`22`, `80`)  
+3. **Scans Security Groups** for rules that expose ports to the public (`0.0.0.0/0`)  
+4. **Matches instances with open ports** and gathers notification email addresses  
+5. **Sends a consolidated alert email** to all listed recipients via AWS SES  
 
 ## ⚙️ Configuration  
 
