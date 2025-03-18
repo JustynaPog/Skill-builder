@@ -5,7 +5,7 @@ This repository contains scripts that automate the process of identifying **AWS 
 
 ### 📜 Scripts:
 - **`script.sh`** – Bash script for querying EC2 instances and security groups.
-- **`instances.py`** – Python 3 script for performing the same operation programmatically.
+- **`instances.py`** – Python 3 script for performing the same operation.
 
 ## 🛠️ Requirements
 - **AWS CLI** installed and configured with appropriate permissions.
